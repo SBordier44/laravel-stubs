@@ -1,0 +1,66 @@
+{
+    "name": "sbordier44/laravel-stubs",
+    "description": "Stubs for Laravel 9+",
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/SBordier44/laravel-stubs/issues",
+        "source": "https://github.com/SBordier44/laravel-stubs"
+    },
+    "keywords": [
+        "laravel",
+        "stubs",
+        "laravel-stubs"
+    ],
+    "authors": [
+        {
+            "role": "Developer",
+            "name": "SBordier44",
+            "email": "slye@nubox.fr",
+            "homepage": "https://github.com/SBordier44"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">= 8.1",
+        "laravel/framework": "^9.0|^10.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^v3.12",
+        "nunomaduro/larastan": "^2.2",
+        "orchestra/testbench": "^v7.10",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "SBordier44\\Larastubs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SBordier44\\Larastubs\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "format": "./vendor/bin/php-cs-fixer fix",
+        "test": "./vendor/bin/phpunit",
+        "test-coverage": "./vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "prefered-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SBordier44\\Larastubs\\StubsServiceProvider"
+            ]
+        }
+    }
+}

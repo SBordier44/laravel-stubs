@@ -1,0 +1,58 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
+use {{ namespacedRequests }}
+use Illuminate\Http\JsonResponse;
+
+class {{ class }} extends Controller
+{
+    /**
+     * @return JsonResponse
+     */
+    public function index(): JsonResponse
+    {
+        return response()->json();
+    }
+
+    /**
+     * @param  \{{ namespacedStoreRequest }}  $request
+     * @return JsonResponse
+     */
+    public function store({{ storeRequest }} $request): JsonResponse
+    {
+        return response()->json();
+    }
+
+    /**
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return JsonResponse
+     */
+    public function show({{ model }} ${{ modelVariable }}): JsonResponse
+    {
+        return response()->json();
+    }
+
+    /**
+     * @param  \{{ namespacedUpdateRequest }}  $request
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return JsonResponse
+     */
+    public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }}): JsonResponse
+    {
+        return response()->json();
+    }
+
+    /**
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return JsonResponse
+     */
+    public function destroy({{ model }} ${{ modelVariable }}): JsonResponse
+    {
+        return response()->json();
+    }
+}

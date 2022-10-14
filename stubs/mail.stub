@@ -1,0 +1,54 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
+
+class {{ class }} extends Mailable
+{
+    use Queueable;
+    use SerializesModels;
+
+    /**
+     * @return void
+     */
+    public function __construct(): void
+    {
+        //
+    }
+
+    /**
+     * @return Envelope
+     */
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            subject: '{{ subject }}',
+        );
+    }
+
+    /**
+     * @return Content
+     */
+    public function content(): Content
+    {
+        return new Content(
+            view: 'view.name',
+        );
+    }
+
+    /**
+     * @return array
+     */
+    public function attachments(): array
+    {
+        return [];
+    }
+}

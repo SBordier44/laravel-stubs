@@ -1,0 +1,76 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
+use {{ namespacedRequests }}
+use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
+
+class {{ class }} extends Controller
+{
+    /**
+     * @return View
+     */
+    public function index(): View
+    {
+        return view('');
+    }
+
+    /**
+     * @return View
+     */
+    public function create(): View
+    {
+        return view('');
+    }
+
+    /**
+     * @param  \{{ namespacedStoreRequest }}  $request
+     * @return RedirectResponse
+     */
+    public function store({{ storeRequest }} $request): RedirectResponse
+    {
+        return redirect();
+    }
+
+    /**
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return View
+     */
+    public function show({{ model }} ${{ modelVariable }}): View
+    {
+        return view('');
+    }
+
+    /**
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return View
+     */
+    public function edit({{ model }} ${{ modelVariable }}): View
+    {
+        return view('');
+    }
+
+    /**
+     * @param  \{{ namespacedUpdateRequest }}  $request
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return RedirectResponse
+     */
+    public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }}): RedirectResponse
+    {
+        return redirect();
+    }
+
+    /**
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return RedirectResponse
+     */
+    public function destroy({{ model }} ${{ modelVariable }}): RedirectResponse
+    {
+        return redirect();
+    }
+}

@@ -1,0 +1,66 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use {{ namespacedParentModel }};
+use Illuminate\Http\JsonResponse;
+
+class {{ class }} extends Controller
+{
+    /**
+     * @param  \{{ namespacedParentModel }}  ${{ parentModelVariable }}
+     * @return JsonResponse
+     */
+    public function index({{ parentModel }} ${{ parentModelVariable }}): JsonResponse
+    {
+        //
+    }
+
+    /**
+     * @param  Request  $request
+     * @param  \{{ namespacedParentModel }}  ${{ parentModelVariable }}
+     * @return JsonResponse
+     */
+    public function store(Request $request, {{ parentModel }} ${{ parentModelVariable }}): JsonResponse
+    {
+        //
+    }
+
+    /**
+     * @param  \{{ namespacedParentModel }}  ${{ parentModelVariable }}
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return JsonResponse
+     */
+    public function show({{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }}): JsonResponse
+    {
+        //
+    }
+
+    /**
+     * @param  Request  $request
+     * @param  \{{ namespacedParentModel }}  ${{ parentModelVariable }}
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return JsonResponse
+     */
+    public function update(Request $request, {{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }}): JsonResponse
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \{{ namespacedParentModel }}  ${{ parentModelVariable }}
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return JsonResponse
+     */
+    public function destroy({{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }}): JsonResponse
+    {
+        //
+    }
+}
