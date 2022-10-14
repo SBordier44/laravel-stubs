@@ -25,3 +25,4 @@ jobs:
         with:
           php_version: '8.1'
           args: --error-format=github
+          memory_limit: 256M
