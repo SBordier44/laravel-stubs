@@ -1,8 +1,13 @@
 name: PHPUnit
 
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
 
 jobs:
   phpunit:
