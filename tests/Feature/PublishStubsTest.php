@@ -12,7 +12,7 @@ class PublishStubsTest extends TestCase
 {
     public function testCanPublishStubs(): void
     {
-        $stubForTest = 'migration.stub';
+        $stubForTest = 'controller.stub';
 
         $stubsTargetPath = $this->app->basePath(path: 'stubs');
 

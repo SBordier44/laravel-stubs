@@ -54,7 +54,7 @@ class PublishCommand extends Command
 
     private function targetPath(SplFileInfo $fileInfo): string
     {
-        return base_path('stubs') . '/' . $fileInfo->getFilename();
+        return $this->laravel->basePath('stubs') . '/' . $fileInfo->getFilename();
     }
 
     /**
