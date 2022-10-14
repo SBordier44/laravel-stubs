@@ -81,7 +81,7 @@ class PublishCommand extends Command
                     data: file_get_contents(filename: $fileInfo->getPathname())
                 );
 
-                return $published++;
+                return $published + 1;
             },
             initial: 0
         );
