@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a464c1abf1625ed0dd086e3969a50630",
+    "content-hash": "a32f4e9112c1593f8ebd5c4e2ac38053",
     "packages": [
         {
             "name": "brick/math",
@@ -5513,16 +5513,16 @@
         },
         {
             "name": "nunomaduro/larastan",
-            "version": "2.2.1",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/larastan.git",
-                "reference": "a2567963b61ee35dedf87aac95136ac4944e86fa"
+                "reference": "37e08dad38c2b94cad702fd6226ee7878554fc4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/larastan/zipball/a2567963b61ee35dedf87aac95136ac4944e86fa",
-                "reference": "a2567963b61ee35dedf87aac95136ac4944e86fa",
+                "url": "https://api.github.com/repos/nunomaduro/larastan/zipball/37e08dad38c2b94cad702fd6226ee7878554fc4e",
+                "reference": "37e08dad38c2b94cad702fd6226ee7878554fc4e",
                 "shasum": ""
             },
             "require": {
@@ -5588,7 +5588,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nunomaduro/larastan/issues",
-                "source": "https://github.com/nunomaduro/larastan/tree/2.2.1"
+                "source": "https://github.com/nunomaduro/larastan/tree/2.2.3"
             },
             "funding": [
                 {
@@ -5608,7 +5608,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-10-04T16:15:14+00:00"
+            "time": "2022-10-14T11:28:59+00:00"
         },
         {
             "name": "orchestra/testbench",
@@ -5681,16 +5681,16 @@
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v7.10.1",
+            "version": "v7.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "e4065bc5085aa0e643b901171cdb7fd95c0e8f3c"
+                "reference": "ef1c1bfe5f05f96151a5bd9a9ccd7c10650bc5d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/e4065bc5085aa0e643b901171cdb7fd95c0e8f3c",
-                "reference": "e4065bc5085aa0e643b901171cdb7fd95c0e8f3c",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/ef1c1bfe5f05f96151a5bd9a9ccd7c10650bc5d1",
+                "reference": "ef1c1bfe5f05f96151a5bd9a9ccd7c10650bc5d1",
                 "shasum": ""
             },
             "require": {
@@ -5772,7 +5772,7 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2022-10-11T12:29:15+00:00"
+            "time": "2022-10-14T11:20:52+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -8528,7 +8528,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
