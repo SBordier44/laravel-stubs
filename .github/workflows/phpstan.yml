@@ -19,5 +19,5 @@ jobs:
       - name: PHPStan Checker
         uses: php-actions/phpstan@v2
         with:
-          php-version: '8.1'
+          php_version: '8.1'
           args: --error-format=github
