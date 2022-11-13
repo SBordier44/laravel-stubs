@@ -12,10 +12,10 @@ use JsonSerializable;
 class {{ class }} extends JsonResource
 {
     /**
-     * @param  Request  $request
+     * @param Request $request
      * @return array|Arrayable|JsonSerializable
      */
-    public function toArray(Request $request): array|Arrayable|JsonSerializable
+    public function toArray($request): array|Arrayable|JsonSerializable
     {
         return parent::toArray($request);
     }
